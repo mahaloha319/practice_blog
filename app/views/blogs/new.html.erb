@@ -1,0 +1,16 @@
+<h1>Blogs#new</h1>
+<p>Find me in app/views/blogs/new.html.erb</p>
+
+<p>新規投稿</p>
+
+<%= form_with(model: @blog, local: true)  do |f| %> 
+
+<%= f.label :title %>
+<%= f.text_field :title %>
+
+<%= f.label :contents %>
+<%= f.text_area :contents %>
+
+<%= f.submit class:"btn btn-primary" %>
+
+<% end %>
